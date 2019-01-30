@@ -27,22 +27,58 @@
         }
       }
 
+      .jumbotron.fullscreen::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: -moz-linear-gradient(left, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+          background: -webkit-linear-gradient(left, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+          background: linear-gradient(to right, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+      }
       .jumbotron.fullscreen {
           background-image: url(https://images.unsplash.com/photo-1507761906261-d31a39975ce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
           background-size: cover;
           background-position: center;
           height: calc(100vh - 56px);
+          margin-bottom: 0;
           color: #fff;
       }
       .jumbotron.fullscreen .container {
           display: table;
           width: 100%;
           height: 100%;
+          position: relative;
       }
       .jumbotron.fullscreen .container .row {
           display: table-cell;
           vertical-align: middle;
       }
+      .jumbotron:not(.fullscreen) {
+          margin-top: 2rem;
+      }
+      .jumbotron.fullscreen + .jumbotron {
+          margin-top: 0;
+      }
+      .persona-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-size: cover;
+      }
+      .persona-names {
+          padding-left: 30px;
+      }
+      /* .footer {
+          background-image: url(https://www.uvic.ca/assets/template3-4/images/footer-bg.gif);
+          background-repeat: repeat-x;
+          background-color: #e8e8e8;
+          padding-top: 72px;
+          overflow: hidden;
+      } */
     </style>
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.2/examples/jumbotron/jumbotron.css" rel="stylesheet">
@@ -97,7 +133,7 @@
   <div class="jumbotron fullscreen" id="fitconnect">
     <div class="container">
         <div class="row">
-          <h1 class="display-3"><strong>Fit<em>Connect</em></strong> <em>with <span class="rotator-headline">nature</span></em></h1>
+          <h1 class="display-3"><strong>Fit<em>Connect</em></strong> <em>with <span class="rotator-headline">students</span></em></h1>
           <p style="font-size: 1.5rem;">Bridging the gap between exercise and mental health</p>
           <p><a class="btn btn-primary btn-lg" href="#introduction" role="button">Learn more &raquo;</a></p>
         </div>
@@ -106,27 +142,33 @@
 
   <div class="jumbotron" id="introduction">
     <div class="container">
-      <h1 class="display-3">Introduction</h1>
+      <h1 class="display-4">Introduction</h1>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>Introduction</h2>
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <p>FitConnect is an existing project or program at the University of Victoria. It was piloted beginning in January 2018, and currently it is directed and coordinated by UVic Health Services staff. The program aims to bridge gaps between exercise and a form of medicine. It currently approaches this by linking up program participants with student volunteer mentors, providing both members and volunteers with passes to CARSA, and having them meet 1-2 times (or more) per week to be active. There are countless studies that show the additive benefits of exercise in helping with depression and anxiety, especially when combined with other forms of therapy. The valuable peer support and motivation that this program provides is excellent, particularly during the more stressful times of the semester. Participants and volunteers have an initial meetup where they discuss goals and schedule times to exercise together.</p>
         <p>Our team mandate is to create a prototype of an app that will help to coordinate and distribute this program. The program is currently coordinated on a person-by-person basis by the staff at UVic Health Services. Volunteers are sourced mainly from UVic’s Exercise Science, Physical & Health Education program as well as the Kinesiology program, but any student can apply online. Some from Psychology and Business students are involved as well. The program has very little online presence at the moment. Participants can also apply online, but are usually referred through counselling services. This whole process could be greatly improved upon if it were streamlined! The idea for the future is to help the program expand and multiply the impact it could have in changing the university ecosystem. By helping people connect through fitness and mental health, perhaps the mental health crisis found in many universities today can be mitigated.</p>
         <p>There is a screening process for participants and volunteers of course. For example, participants with severe depression or extreme anxiety are not considered for participation. Student volunteers are not meant to be therapists, though there is an element of helping with the mental health of the participants by nature of the program of course. Presently it is the role of the mentor to help with fitness, and boundaries are discussed during initial screening. Volunteers mentors are given mental health literacy training. Because of the officiated nature of the program (i.e. they receive a CARSA semester pass and are documented and dealt with by staff members), the volunteers are held accountable for what they say or suggest to the participants.</p>
         <p>Our implementation of the app for project will include many elements to facilitate some of the parts of the program. Having a moderator for the program will be a part of the framework. Users will create a profile that needs to be secure, and will provide information about themselves for matching. We can implement a matching system based on interests, ages, gender identity, as well as asking how participants would like to benefit from the program, and other questions such as preferred fitness style or styles they would like to explore. Responses to these questions would be kept confidential. Suggested matches would be given to either the participant or the volunteer. After being matched, a private messaging system for security will avoid giving out phone numbers and other personal information, and allow for initial meetups. Participants and volunteers would be presented with an unmatching system and a “tell us what went wrong” section. The moderator for the program would examine these incidents and have blacklisting power. Participants can also be provided with a rating system for their volunteers, and conversely volunteers can have a flagging system for participants.</p>
       </div>
     </div>
-    <hr>
+    <!-- <hr> -->
   </div> <!-- /container -->
 
-  <div class="container" id="stakeholders">
+  <div class="jumbotron" id="stakeholders">
+    <div class="container">
+      <h1 class="display-4">Stakeholders</h1>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>Stakeholders</h2>
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <p>The stakeholders for FitConnect are the participants, the volunteers, the staff at UVic Health Services, and CARSA.</p>
         <p>The participants in the program are the first stakeholder. They are dealing with a range of mental health issues, and are the most vulnerable of the stakeholders. As such, they need privacy and confidentiality, as well as safety and security. They are seeking help in ways that don’t necessarily involve professional counselling or medications. Their goal is to use the app and program to connect with another person and develop exercise and peer support as another tool to help them in their daily life. This is an excellent opportunity for growth and strengthening of systematic personal wellness.</p>
         <p>The volunteers are the second stakeholders. Their goal is to get exercise partners, thinking that this is a great, easy way to meet someone new and schedule some solid workouts! They need clear instruction and direction for setting up this new partnership/mentorship and the boundaries that can go along with it. Their goal is to help others out, both with exercising and personal problems, and see this as an opportunity to contribute value. Their goal is to meet someone new and become good friends with them.</p>
@@ -134,100 +176,119 @@
         <p>CARSA is the fourth stakeholder. They provide passes to the participants and volunteers, unless either of them already hold a pass. They want to know that what they provide is indeed having a strongly positive effect, and that they are not simply giving out free passes willy-nilly. They need official feedback that the program is working and their contributions are worthwhile. Their goal is to provide the facilities for the program and reduce barriers to wellness, and by doing so, help contribute to the wellness of the student population.</p>
       </div>
     </div>
-    <hr>
+    <!-- <hr> -->
   </div> <!-- /container -->
 
-  <div class="container" id="personas">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Personas</h2>
+    <div class="jumbotron" id="personas">
+      <div class="container">
+        <h1 class="display-4">Personas</h1>
       </div>
     </div>
+
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <table>
             <tr>
-                <td style="width: 270px; height: 270px; border-radius: 135px; background-size: cover; background-position: center; background-image: url(https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);"></td>
-                <td>
+                <td class="persona-image" style="background-image: url(https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80); background-position: center;"></td>
+                <td class="persona-names">
                     <h3>Jackson Smith</h3>
                     <p>Age: 23<br>Occupation: Student<br>Major: Psychology<br>Year: Third<br>Location: Victoria, BC<br>Lifestyle: Active</p>
                 </td>
             </tr>
         </table>
+        <p>&nbsp;</p>
         <p>Jackson is a third year Psychology student at the University of Victoria. He has struggled with mild depression and anxiety in his first year at the university. After researching, Jackson found that exercising and living a healthier lifestyle could help his depression and anxiety. He gave it a try and found that it has helped and he continues to work out and eat healthy on a daily basis. In his spare time, he is always helping his friends and others by providing advice and helping however they need. Jackson works with computers, phones and applications on a daily basis, and is very fluent in doing basic tasks on these devices and apps. He has always wanted to volunteer so that he can help others, share his story, and create a positive environment.</p>
       </div>
-      <div class="col-md-6">
+      <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-6">
           <table>
               <tr>
-                  <td style="width: 270px; height: 270px; border-radius: 135px; background-size: cover; background-image: url(https://images.unsplash.com/photo-1494571180607-f17765ead771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1883&q=80);"></td>
-                  <td>
+                  <td class="persona-image" style="background-image: url(https://images.unsplash.com/photo-1494571180607-f17765ead771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1883&q=80);"></td>
+                  <td class="persona-names">
                       <h3>Stacy Jones</h3>
                       <p>Age: 19<br>Occupation: Student<br>Major: Biology<br>Year: Second<br>Location: Victoria, BC<br>Lifestyle: Sedentary</p>
                   </td>
               </tr>
           </table>
+          <p>&nbsp;</p>
         <p>Stacy is a 19-year-old student studying biology at the University of Victoria. She grew up in Calgary, but has moved to Victoria for school. For the majority of her life, she has been surrounded by family and friends that she is familiar with. She struggled through parts of first year, due to having light anxiety and depression. Moving to a new city caused her to feel lonely and she is anxious when speaking to new people. During tough weeks, she stress-eats and doesn’t leave her house as much. Stacy doesn’t get much exercise and as a result has low self confidence. She’s decided that she wants to make a change to her lifestyle in the new year, and keep busy with exercise. The thing that’s holding her back is that the gym is intimidating to her, and she has no clue where to start. She could overcome her fears of going to the gym and also help treat her depression if she had someone to go to the gym with and teach her.</p>
       </div>
     </div>
-    <hr>
+    <!-- <hr> -->
   </div> <!-- /container -->
 
-  <div class="container" id="requirements">
+  <div class="jumbotron" id="requirements">
+    <div class="container">
+      <h1 class="display-4">Requirements</h1>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>Requirements</h2>
-        <h3 id="participants">Participants</h3>
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2 id="participants">Participants</h2>
+        <p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>The application needs to provide a secure and safe platform for participants to communicate with their peer volunteer without providing too much personal information (ie. phone number).</p>
         <p><strong><em>Rationale</em></strong><br>Failure to do so may lead to participants not trusting or using the app anymore as it requires too much personal information that the volunteer can see and the participants only want to be able to communicate through the app.</p>
         <p><strong><em>Fit Criterion</em></strong><br>The application will only require basic information such as first name, age, gender identity, athletic goals, schedule and interests. The application shall also provide a rating system for the participant-to-volunteer chats. The rating system will notice if the participant has given multiple low ratings to the volunteer. From there, the application may suggest the participant find a new peer volunteer.
         <p>Customer Satisfaction: 3<br>Customer Dissatisfaction: 5</p>
-        <hr>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>The application needs to filter out volunteers who are there for the wrong reasons to make participants feel safe.</p>
         <p><strong><em>Rationale</em></strong><br>Failure to do so may lead to participants feeling unsafe and not be able to trust volunteers on the app.</p>
         <p><strong><em>Fit Criterion</em></strong><br>The volunteers are screened before signing up. If a participants feels like the volunteer is there for the wrong reason, participants are able to unmatch with the volunteer. There will be a “tell us what went wrong” page which will have options for the user to click like, “The volunteer did not work out for me”, “The volunteer is on this app for the wrong reasons”, or “I’d rather not say”. If the problem is that the volunteer is on the app for the wrong reasons, then a moderator is able to look into the issue and remove the volunteer from the application if necessary.</p>
         <p>Customer Satisfaction: 4<br>Customer Dissatisfaction: 5</p>
-        <hr>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>The application needs to match volunteers to participants where the participants get to choose who their peer volunteer is based on availability, goals, gender identity, interests, etc...</p>
         <p><strong><em>Rationale</em></strong><br>Failure to appropriately match volunteers to participants may result in a participant having no volunteers to choose from.</p>
         <p><strong><em>Fit Criterion</em></strong><br>A moderator would ensure that there are volunteers to choose from for each day of the week. If there is absolutely no one for the participant to choose from, there will be a list of additional volunteers they can view and hopefully be able to find a peer that fits into their schedule and has similar goals but may have different interest. From there, the participant may be able to compromise on differences and then be able to match with the peer volunteer.</p>
         <p>Customer Satisfaction: 4<br>Customer Dissatisfaction: 5</p>
-        <hr>
-        <h3 id="volunteers">Volunteers</h3>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
+        <h2 id="volunteers">Volunteers</h2>
+        <p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>Volunteers need to be able to sign up and be contacted so that they can complete training and participate.</p>
         <p><strong><em>Rationale</em></strong><br>Volunteers must be screened, so they need to first sign up. After signing up, they need to undergo training so that they are able to administer the given tests to diagnose participants.</p>
         <p><strong><em>Fit Criterion</em></strong><br>UVHS staff need to screen the volunteers to make sure they will be right for the program. Given they feel like the volunteer is a good fit for the program, they will be provided with training on how to perform mental health assessments on participants.</p>
-        <p>Customer Satisfaction: ???<br>Customer Dissatisfaction: ???</p>
-        <hr>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>Volunteers need to know how to to appropriately help participants.</p>
         <p><strong><em>Rationale</em></strong><br>Failure to train volunteers may lead to inappropriate volunteer-participant relationships and may lead to non-helpful advice.</p>
         <p><strong><em>Fit Criterion</em></strong><br>Volunteers need to go through a training process or a class that will help them be able to appropriate advice participants with mild mental illnesses. This will ensure that the participant feels comfortable confiding in their peer volunteer.</p>
         <p>Customer Satisfaction: 4<br>Customer Dissatisfaction: 5</p>
-        <hr>
-        <h3 id="uvhsstaff">UVHS Staff</h3>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
+        <h2 id="uvhsstaff">UVHS Staff</h2>
+        <p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>UVHS staff need to be able to see new volunteer applications and set up screening appointments.</p>
         <p><strong><em>Rationale</em></strong><br>Having an automated queue of volunteers in the system would help reduce overhead for UVHS staff.</p>
         <p><strong><em>Fit Criterion</em></strong><br>The application should have a form for volunteers to sign up and for UVHS staff to approve or deny applications. The approval should allow the UVHS staff to then message the volunteer applicant and set up an appointment with them so that they can be trained.</p>
-        <hr>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>UVHS staff need to be able to register new volunteers once they have successfully completed training.</p>
         <p><strong><em>Rationale</em></strong><br>Once a volunteer has completed training, they are ready to participate in the program.</p>
         <p><strong><em>Fit Criterion</em></strong><br>The application needs to let UVHS staff approve a volunteer’s profile so that it becomes active and allows for the volunteer to participate.</p>
-        <hr>
-        <h3 id="carsa">CARSA</h3>
+        <p>&nbsp;</p><hr><p>&nbsp;</p>
+        <h2 id="carsa">CARSA</h2>
+        <p>&nbsp;</p>
         <p><strong><em>Description</em></strong><br>CARSA needs to give out passes to volunteers and participants.</p>
         <p><strong><em>Rationale</em></strong><br>Since this is a service provided to students with mental health issues, there shouldn’t be a financial barrier to entry for the students. This is also meant to increase volunteering incentive and remove the potential financial barrier to entry that they may face.</p>
         <p><strong><em>Fit Criterion</em></strong><br>Volunteers and participants need to be screened beforehand so the system isn’t abused for free CARSA passes.</p>
+        <p>&nbsp;</p>
       </div>
     </div>
-    <hr>
+    <!-- <hr> -->
   </div> <!-- /container -->
 
-  <div class="container" id="scenarios">
-      <div class="row">
+  <div class="jumbotron" id="scenarios">
+    <div class="container">
+      <h1 class="display-4">Scenarios</h1>
+    </div>
+  </div>
+
+  <div class="container">
+      <!-- <div class="row">
         <div class="col-md-12">
-            <h2>Scenarios</h2>
             <p>The scenarios are based on the user requirements.</p>
         </div>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-md-4">
         <h3>Jackson (Volunteer)</h3>
@@ -242,20 +303,25 @@
         <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
       </div>
       <div class="col-md-4">
-        <h3>Stacy (Participant)</h3>
+        <h3>&nbsp;</h3>
         <p><strong>The application needs to match volunteers to participants where the participants get to choose who their peer volunteer is based on availability, goals, gender identity, interests, etc...</strong></p>
         <p>Stacy has signed up to the FitConnect program online and is now looking at the volunteer profiles. Since she is a student, her availability depends on her school schedule but the online page doesn’t let her filter the time slots. Furthermore, she would prefer to be with a female volunteer, as she would be able to open up and discuss her goals more comfortably. The current online version of FitConnect doesn’t let her filter her preferences, thus having to individually access the volunteer profiles to match her requirements.</p>
         <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
       </div>
     </div>
-    <hr>
+    <!-- <hr> -->
   </div> <!-- /container -->
 
-  <div class="container" id="hta">
+  <div class="jumbotron" id="hta">
+    <div class="container">
+      <h1 class="display-4">Hierarchical Task Analysis</h1>
+    </div>
+  </div>
+
+  <div class="container">
       <div class="row">
         <div class="col-md-12">
-            <h2>Hierarchical Task Analysis</h2>
-            <p>The scenarios are based on the user requirements.</p>
+            <p>:)</p>
         </div>
     </div>
     <hr>
@@ -263,8 +329,10 @@
 
 </main>
 
-<footer class="container">
-  <p>&copy; 2019 FitConnect &amp; University of Victoria</p>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2019 FitConnect &amp; University of Victoria</p>
+    </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
@@ -275,10 +343,10 @@ $(document).ready(function() {
     $('.navbar-brand, .nav-link, .dropdown-item, .btn-primary').not('.dropdown-toggle').on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 72
+            scrollTop: $($(this).attr('href')).offset().top - 56
         }, 1000);
     });
-    let keywords = ['students', 'nature', 'mental health'],
+    let keywords = ['nature', 'mental health', 'students'],
         index = 0,
         timer = setInterval(function() {
             $('.rotator-headline').text(keywords[index++ % keywords.length]);
