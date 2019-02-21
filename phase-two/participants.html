@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>FitConnect - University of Victoria</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/phase-two/">FitConnect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/phase-two/">Phase II <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="participants.html">Participants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="volunteers.html">Volunteers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="administrators.html">Administrators</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="/">Phase I</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Prototypes for Participants</h1>
+          <p>If you haven&rsquo;t already, download the Balsamiq mockups for participants and volunteers.</p>
+          <p><a class="btn btn-outline-primary btn-lg" href="downloads/FC_Prototype-Student.zip" role="button">Download mockups »</a></p>
+        </div>
+      </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="">Requirement: <span class="text-muted">The application needs to provide a secure and safe platform for participants to communicate with their peer volunteer without providing too much personal information.</span></h2>
+        <p class="lead">The application provides an “in-app” chat function which allows participants and volunteers to communicate securely. There is a messages page, accessed by the bottom menu, which will take the user to their messages and also provide potential matches. The potential matches are other users that have “liked” the participant or volunteer. The participant or volunteer will be able to choose whether or not they would like to match with the potential matches. A match is only made if both parties have “liked” each other and then a new chat is started. The application will provide notifications when a new message or match has been received. There is no need to provide a phone number or any personal information.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/FC_Prototype-Chat.png" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="">Requirement: <span class="text-muted">The application needs to filter out volunteers who are there for the wrong reasons to make participants feel safe.</span></h2>
+        <p class="lead">The admins will be responsible for filtering out volunteers and participants who are there for the wrong reasons. Upon signing up, you will need to wait to be approved before you are able to login. After signing up, there will be a “Thank you for signing up” page with further instructions. The user will then receive an email with a time to meet with a UVHS staff member to determine if the program is the right fit. If the UVHS staff determine the program is right for the participant or volunteer, the participant or volunteer will be able to login to the application using the email and password they set up when they signed up for the program.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="images/FC_Prototype-Activate.png" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="">Requirement: <span class="text-muted">The application needs to match volunteers to participants based on availability, goals, gender identity, interests, etc.</span></h2>
+        <p class="lead">There is a matches page which is accessed through the bottom menu under the “home” button. The matches page will be the home page for participants and users after the first login and after their profile has been created. Users will edit their profile anytime they want using the “profile” button on the bottom menu. A profile consists of a first name, age, gender, program, fitness goals, favourite activities, and any additional interests. Last names and student numbers will be hidden for privacy reasons, but needed to ensure that the user is a student at UVic. Under the “home” button, there is a page of people who the participants or volunteers can choose from. A participant or volunteer can learn more about the user by clicking on the profile. From there, the participant or volunteer can either like or dislike a user by using the “thumbs up” or “thumbs down” buttons. If the thumbs down button is hit, the user will not show up on the “home” matches page anymore. If the thumbs up button is hit, the match goes into the “potential match” list of the user the participant of volunteer is looking at. If both users like each other, a new chat is started. A participant is able to unmatch or report a user at anytime.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/FC_Prototype-Profile.png" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="https://www.uvic.ca/home/about/legal-notices/index.php">Legal</a> &middot; <a href="https://www.uvic.ca/home/about/contact-us/index.php">Contact</a></p>
+    <p>&copy; 2019 FitConnect &amp; University of Victoria</p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+</html>
