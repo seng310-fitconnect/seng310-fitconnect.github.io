@@ -87,6 +87,10 @@
         background-color: #023a65;
         border-color: #023a65;
       }
+      .nav-separator {
+          border: 1px solid #6b7279;
+      }
+      .phase-link {}
       /* .footer {
           background-image: url(https://www.uvic.ca/assets/template3-4/images/footer-bg.gif);
           background-repeat: repeat-x;
@@ -111,11 +115,9 @@
         <a class="nav-link" href="#">Phase I<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/phase-two/index.html">Phase II</a>
+        <a class="phase-link nav-link" href="/phase-two/index.html">Phase II</a>
       </li>
-      <li class="nav-item">
-        <p>|</p>
-      </li>
+      <li class="nav-separator"></li>
       <li class="nav-item">
         <a class="nav-link" href="#introduction">Introduction</a>
       </li>
@@ -369,7 +371,7 @@
 <!-- <script type="text/javascript">!function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);</script> -->
 <script type="text/javascript">
 $(document).ready(function() {
-    $('.navbar-brand, .nav-link, .dropdown-item, .btn-primary').not('.dropdown-toggle').on('click', function(e) {
+    $('.navbar-brand, .nav-link, .dropdown-item, .btn-primary').not('.dropdown-toggle, .phase-link').on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 56

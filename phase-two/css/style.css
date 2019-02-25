@@ -50,6 +50,10 @@ a:hover {
     cursor: pointer;
 }
 
+.nav-separator {
+    border: 1px solid #6b7279;
+}
+
 .material-icons {
     font-size: 104px;
     border: 4px solid #5a5a5a;
