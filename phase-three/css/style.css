@@ -1,0 +1,30 @@
+body {
+    padding-top: 56px !important;
+}
+
+a {
+    color: #005493;
+}
+
+a:hover {
+    color: #002754;
+    text-decoration: none;
+}
+
+.btn-outline-success {
+    color: #F5AA1C;
+    border-color: #F5AA1C;
+}
+
+.btn-outline-success:hover {
+    background-color: #F5AA1C;
+    border-color: #F5AA1C;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.featurette .lead {
+    margin-top: 30px;
+}
