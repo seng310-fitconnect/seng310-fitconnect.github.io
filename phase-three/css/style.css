@@ -21,10 +21,41 @@ a:hover {
     border-color: #F5AA1C;
 }
 
+.nav-item .btn-outline-success {
+    margin-left: 0.5rem;
+}
+
 .material-icons {
     vertical-align: middle;
 }
 
+.img-fluid .material-icons {
+    font-size: 128px;
+}
+
+.img-fluid .material-icons:after {
+    content: 'Watch video';
+}
+
 .featurette .lead {
     margin-top: 30px;
+}
+
+.jumbotron {
+    margin-bottom: 7rem;
+    margin-top: 7rem;
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .featurette-heading {
+        margin-top: 5rem;
+    }
+
+    .jumbotron {
+        margin-top: 5rem;
+    }
 }
