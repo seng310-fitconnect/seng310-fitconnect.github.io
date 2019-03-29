@@ -17,7 +17,36 @@
       body {
         padding-top: 56px !important;
       }
-      
+
+      a {
+        color: #005493;
+      }
+
+      a:hover {
+        color: #002754;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background-color: #005493;
+        border-color: #005493;
+      }
+
+      .btn-primary:hover {
+        background-color: #002754;
+        border-color: #002754;
+      }
+
+      .btn .material-icons {
+        font-size: inherit;
+        vertical-align: text-bottom;
+      }
+
+      .marketing .featurette-heading {
+        margin-bottom: 2rem;
+        margin-top: 0;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -35,6 +64,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -68,11 +98,11 @@
 
 <main role="main">
 
-  <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-light" style="background-image: url(assets/i-yunmai-617616-unsplash.jpg); background-position: center; background-size: cover;">
+  <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-light" style="background-image: url(assets/i-yunmai-617616-unsplash.jpg); background-position: center; background-size: cover; margin-bottom: 7rem;">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="display-4 font-weight-normal" style="text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">Final round</h1>
       <p class="lead font-weight-normal">This last phase of the project explores evaluation of interaction with the high-fidelity prototypes we developed in phase III.</p>
-      <a class="btn btn-outline-light" href="#eval">Read more</a>
+      <a class="btn btn-outline-light" href="#eval">Read more <i class="material-icons">keyboard_arrow_down</i></a>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -107,7 +137,7 @@
         <p class="lead"><strong>Where:</strong><br>Done in groups of 3, 1 participant, volunteer, and admin in an ECS lab.</p>
         <p class="lead"><strong>What:</strong><br>Participant and volunteer sign up, matching, and reporting volunteers. Admins will be tested approving users, including setting appointments, and acting upon reported users. We will obtain metrics about how easy users find the signup and appointment process. We will also find out how easy participants find reporting volunteers, as safety if essential for the app. Admins will be observed acting upon a volunteer report, so we will obtain data on how easy it is for admins to manage users.</p>
         <p class="lead"><strong>When:</strong><br>Participants will be evaluated in stages. We will evaluate a pair of 1 participant and 1 volunteer signing up and when they are waiting for approval, have an admin go and approve them. Then the participant and volunteer will proceed with using the app.</p>
-        <p><a class="btn btn-primary" href="downloads/FitConnect-Consent-Form.pdf">Download consent form</a></p>
+        <p><a class="btn btn-primary" href="downloads/FitConnect-Consent-Form.pdf">Download consent form <i class="material-icons">get_app</i></a></p>
       </div>
     </div>
 
@@ -313,7 +343,7 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-right"><a href="#">Legal</a> &middot; <a href="#">Contact</a></p>
+    <p class="float-right"><a href="https://www.uvic.ca/home/about/legal-notices/index.php">Legal</a> &middot; <a href="https://www.uvic.ca/home/about/contact-us/index.php">Contact</a></p>
     <p>&copy; 2019 FitConnect &amp; University of Victoria</p>
   </footer>
 </main>
