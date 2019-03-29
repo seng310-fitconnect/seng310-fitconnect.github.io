@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">FitConnect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Phase I</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/phase-two/">Phase II</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/phase-three/">Phase III</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/phase-four/">Phase IV <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Phase I</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Phase II</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Phase III</a>
+        </li>
+        <li class="nav-item active">
+          <a class="btn btn-outline-success" href="#">Phase IV <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Evaluation strategy</h2>
+        <p class="lead">Our user evaluation will be conducted in our university lab session with other students who are not part of our group as the users. They will be evaluating two variations of our hi-fidelity prototype for the mobile app for the FitConnect project, which is built using Adobe XD. This is a controlled setting where we will give the participants tasks to complete, using the two different variations, and we will observe them using the application.</p>
+        <p class="lead">We will collect both quantitative and qualitative data, using direct observation, screen capture, and a short questionnaire for the participants.</p>
+        <p class="lead">The constraints we have are that we are performing the evaluation during the SENG 310 weekly lab, in the ELW 220 computer lab, with no funding, out of a population sample of university students in SENG 310.</p>
+        <p class="lead">The purpose of this evaluation is to gather ideas and data to inform and hopefully invent the future design of our app. We hope to learn about bugs in our current design, and user effectiveness (and preference...) between our designs and our app.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Evaluation plan</h2>
+        <p class="lead"><strong>Why:</strong><br>We are trying to gauge how effective the core aspects of the app are, and their ease of use. Participant and volunteer sign up will be tested, as it’s required that users are able to sign up easily. Another test will be on the appointment system, and whether or not it is too complicated. This is a key requirement of the app as it allows for UVHS to screen and train volunteers. Participant/volunteer matching will be tested for ease of use and impressions on the features’ functionality since participants need to be able to easily find volunteers to work out with. Finally, the report functionality will be tested to ensure users can feel safe using the app.</p>
+        <p class="lead"><strong>Who:</strong><br>6 people total: 2 participants, 2 volunteers, 2 admins</p>
+        <p class="lead"><strong>How:</strong><br>Users will be required to sign a short consent form. For the participant study, users who don’t have much gym experience will be selected. For the volunteers, users who have gym experience will be selected. Admins will be chosen at random, to try and get a representative sample, as most people have experience with a mobile device.</p>
+        <p class="lead"><strong>Where:</strong><br>Done in groups of 3, 1 participant, volunteer, and admin in an ECS lab.</p>
+        <p class="lead"><strong>What:</strong><br>Participant and volunteer sign up, matching, and reporting volunteers. Admins will be tested approving users, including setting appointments, and acting upon reported users. We will obtain metrics about how easy users find the signup and appointment process. We will also find out how easy participants find reporting volunteers, as safety if essential for the app. Admins will be observed acting upon a volunteer report, so we will obtain data on how easy it is for admins to manage users.</p>
+        <p class="lead"><strong>When:</strong><br>Participants will be evaluated in stages. We will evaluate a pair of 1 participant and 1 volunteer signing up and when they are waiting for approval, have an admin go and approve them. Then the participant and volunteer will proceed with using the app.</p>
+        <p><a class="btn btn-primary" href="downloads/FitConnect-Consent-Form.pdf">Download consent form</a></p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Task description</h2>
+        <p class="lead">We’ll have them perform the tasks on one version of the prototype and then on the other.</p>
+        <p class="lead">The evaluation process involves 3 different groups of possible users of the application: the participants, volunteers and admins, each performing a different set of tasks and some of the common tasks are applicable to all.</p>
+        <p class="lead"><strong>We asked the user to perform 6 simple tasks as a volunteer/participant:</strong></p>
+        <ol class="lead">
+            <li>Login to the application.</li>
+            <li>Assume you would like to match with a user who is on the home screen. “Like” the users profile from the home screen and start a new conversation with them.</li>
+            <li>Assume you would like to message “Layne” from the messages screen. Go to Layne’s chat and message her. Assume you do not want to be matched with Layne anymore and unmatch with her.</li>
+            <li>Assume you would like to talk to Alex. Alex has said something inappropriate to you at one of your meetings. Report Alex.</li>
+            <li>Assume you would like to edit your profile. Upload a new picture of yourself and update your “About me” section.</li>
+            <li>Assume you are not liking the FitConnect app and you would like to delete your account. Please delete your account.</li>
+        </ol>
+        <p class="lead"><strong>We asked the users to perform 4 simple tasks as an admin:</strong></p>
+        <ol class="lead">
+            <li>Login as an admin.</li>
+            <li>Assume you would like to “approve” the user Makaila. Approve Makaila so she can use the application and schedule an appointment with her. Start a new chat with Makaila to check in on her.</li>
+            <li>Assume you received a new notification about a reported user. Check the reported users and start a new chat with the user to ask what went wrong. Decide whether you want to “Forgive” or “Ban” the user.</li>
+            <li>Assume you would like to see only the volunteers who have a “pending approval” status.</li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Evaluation script</h2>
+        <p class="lead">The evaluation of the high-fidelity FitConnect prototype, will be done by choosing 6 candidates from the lab. Three groups will be made, each with two candidates, wherein each group will have the roles assigned as: volunteer, participant and administrator.</p>
+        <p class="lead">After forming the groups, roles of each candidate will be explained and how they could connect with the application making the understanding more clear. Moreover, for better understanding the individual roles, personas from phase I will be shown to each candidate pertaining to the role they are assigned. The next process would be getting consent from all the candidates. This would be done by briefly reading out the consent form and addressing the possible concerns/questions they might have.</p>
+        <p class="lead">Each candidate would be asked to be seated in front of a lab monitor and questions would be asked to each as written in Part 4 of this phase. This process entails asking the candidates to perform a certain task, further observing the easy-of-use of the prototype and the possible improvements that could be implemented for better understanding and/or pertaining to any hindrance the candidates may have.</p>
+        <p class="lead"><strong>Tasks for User and Participants:</strong></p>
+        <ol class="lead">
+            <li>
+                Login to the application
+                <ul>
+                    <li>User and Participant logins</li>
+                    <li>Identifying the separate administration login, that provides additional features/accessibility</li>
+                </ul>
+            </li>
+            <li>
+                Match with a user on the home-screen of the application and start a conversation
+                <ul>
+                    <li>Identifying the ease-of-use or difficulty in matching and starting a conversation</li>
+                </ul>
+            </li>
+            <li>
+                Reporting a particular user/participant
+                <ul>
+                    <li>Assessing the ease of performing this task (Is it easy to navigate and report?)</li>
+                    <li>In situations, wherein the user/participant has been communicating inappropriately, and is to be reported.</li>
+                </ul>
+            </li>
+            <li>
+                Editing/updating your profile
+                <ul>
+                    <li>Pertaining to situations where the user/participant wants to upload a new photo or update their “About me” section</li>
+                </ul>
+            </li>
+            <li>
+                Deleting the application
+                <ul>
+                    <li>Assessing the easy of the deleting the application, if the user/participant doesn’t want to use the application any longer. (Is it easy to navigate this feature?)</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="lead"><strong>Tasks for Administrator:</strong></p>
+        <ol class="lead">
+            <li>Administration login</li>
+            <li>
+                Approving a user or a participant, and communicating with them
+                <ul>
+                    <li>Assessing the ease of approving a user so they can schedule an initial meet-up appointment and start a new chat</li>
+                </ul>
+            </li>
+            <li>
+                Getting notified of a reported user or participant
+                <ul>
+                    <li>Processing a report of a user or participant, by deciding to “Forgive” or “Ban” them</li>
+                </ul>
+            </li>
+            <li>
+                Only viewing participants or volunteers with a pending “Pending Approval” status
+                <ul>
+                    <li>Easy to access only those with a “Pending Approval” status (Is it easy to navigate this feature for the admin?)</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="lead">Based on the task description, the candidates would be asked the above questions consecutively in the very order. If the candidates face any difficulty to complete the asked task, the ineffectiveness would be noted and possible improvements could be discussed after the evaluation. Since for this project we created a high-fidelity prototype using Adobe XD and a low-fidelity prototype using Balsamiq Mockups, the evaluation tasks for the same volunteers will be done for both the prototypes, so that the prototypes can be accurately compared.</p>
+        <p class="lead">The evaluation would be concluded by thanking all the candidates for their time and suggestions regarding the application. This assessment promotes the approach of addressing the improvements that could be implemented to better the application to all its users.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Cognitive walkthrough</h2>
+        <p class="lead"><strong>Cognitive Walkthrough for Volunteers/Participants:</strong></p>
+        <ol class="lead">
+            <li>Login into the application by simulating typing. Click on the box that says “Email Address” and then tap the “Login” button.</li>
+            <li>On the home screen, tap on the users profile. Read the profile by scrolling downwards. View all pictures of the user by tapping on the users picture. Scroll to the bottom of the users profile to “Like” or “Dislike”. To “Like” the user, tap the thumbs up button located at the bottom of the profile on the right side. To “Dislike” a user, tap the thumbs down button located at the bottom of the profile on the left side.</li>
+            <li>To access the messages from the home screen, tap the messages button located at the top of the screen on the right side. To chat with Layne, tap on her picture or the text. To type a message, click on the “type a message” box. To unmatch Layne, click on her profile picture, located at the top of the chat in the middle of the screen. Scroll down to the bottom of her profile and click the “Unmatch” button located at the middle-bottom of her profile.</li>
+            <li>To access messages from the home screen, tap the messages button located at the top of the screen on the right side. To chat with Alex, tap on his profile picture or the corresponding message from Alex. To report Alex, tap on the 3 dots located at the top of the chat on the right side. Select the option that best reflects the issue. Tap on the “Report User” button located at the bottom of the screen in the middle.</li>
+            <li>From the home screen, click the “user” icon in the top left corner. Click the “Edit Profile” button from the list of buttons. To add a picture, click on the empty picture box, then tap the “upload picture” button or the “take a picture” button. To edit the “About me” section, tap on the text. To save changes, go back to the profile home page by clicking the back button located in the top left corner.</li>
+            <li>To delete your account, from the home screen go to the profile page by clicking on the “user” icon located in the top left corner. Click on the red “Delete Account” button located at the bottom of the list. A “are you sure” notification will pop up. Click the “yes” button located on the right side of the notification.</li>
+        </ol>
+        <p class="lead"><strong>Cognitive Walkthrough for Admins:</strong></p>
+        <ol class="lead">
+            <li>At the bottom of the login screen, there is a “Admin Login”. To login as an Admin, tap on the text, then tap the “Login” button located just above the keyboard.</li>
+            <li>From the home screen, to approve Makaila, tap on the “Manage” button. There is a blue “Approve User” button located in the middle of the screen. Tap on that button. To know if the user was approved, a small check mark will appear next to the “Approve User” text. To schedule an appointment with Makaila, there is a “Schedule new” appointment button located at the bottom of the list. To start a chat with Makaila, there is a “Message” button located in the middle of the list.</li>
+            <li>From the home screen, tap on the “View Reports” button located under the “Volunteers/Participants/Appointments” tabs. To view the reported user and inquire about the issue, tap on the “Manage” button located to the right of the profile. To “Forgive” the user and allow them to continue using the applications, tap on the blue “Forgive” button located on the left side. To “Ban” a user from using the application, tap on the red “Ban” button located on the right side. The “Ban” button will bring up a notification box which asks the Admin if they are sure they want to ban the reported user. If the Admin is sure, tap on the “yes” button located on the right side. If the Admin does not want to ban the user, tap on the “no” button located on the left side.</li>
+            <li>From the home screen, tap on the “Filter” button. The filter button will show a drop down menu of what you would like to filter. Tap on the “Pending” button to only show those users who are pending approval.</li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Quantitative results</h2>
+        <p class="lead">We will collect quantitative data on the amount of time it takes to complete the task, number of times that they have to hit the back button, and a rating of which design they preferred, as well as qualitative data:</p>
+        <ul class="lead">
+            <li>Which design implementation did you prefer? 1 or 2</li>
+            <li>On a scale of one to ten, how would you rate our aesthetic design?</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Qualitative questions</h2>
+        <p class="lead">We want to gather some outside suggestions and perspectives for our application. Since we are the designers, we have the opportunity improve the app and it’s interfaces, and as we have learned in class, designers are not great judges of an interface’s usability since we are not typical users. We will do a short survey after the participants complete the tasks that asks:</p>
+        <ul class="lead">
+            <li>Do you have any suggestions to improve the interface?</li>
+            <li>Do you have any suggestions for additional features?</li>
+        </ul>
+        <p class="lead">We will take their answers and preferences into consideration for future implementable features. Their feedback on the immediate existing interface will help us to polish the app, and the suggestions they have for future features will be put on our list of possibilities.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Summary of results</h2>
+        <p class="lead">The user study was conducted similar to the evaluation script with both the low-prototypes and high-prototypes considered for the evaluation. The study was conducted in a controlled setting involving the users, in a laboratory environment, where the candidate’s process of completing the task was observed. Collection of data during the observation was done both quantitatively and qualitatively.</p>
+        <p class="lead"><strong>Quantitative Data</strong><br>This data was collected by observing and measuring the user interaction using the Think Aloud technique, where we asked users to think aloud while performing the tasks, which helped during the evaluations as we observed any difficulties they may have had. We also measured the average time it took for each candidate to perform a task for both the high-fidelity prototype and the low-fidelity prototype. This aspect provided a contrast in terms of ease-of-use and accessibility, further giving an idea of which prototype was better implemented. The results obtained through this analysis gave the following:</p>
+        <p class="lead"><strong>Average time taken to complete a task</strong></p>
+        <ul class="lead">
+            <li>
+                Low-Fidelity Prototype - Balsamiq Mockups:
+                <ul>
+                    <li>Average time to report a participant or volunteer = 1:54 minutes</li>
+                    <li>Average time to navigate the editing of profiles = 0:45 minutes</li>
+                </ul>
+            </li>
+            <li>
+                High-Fidelity Prototype - Adobe XD:
+                <ul>
+                    <li>Average time to report a participant or volunteer = 1:10 minutes</li>
+                    <li>Average time to navigate the editing of profiles = 0:20 minutes</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="lead">Based on the data obtained from both the prototypes, it can be concluded that the high-fidelity prototype is clearly more efficient and thus lets the user complete the given task earlier.</p>
+        <p class="lead"><strong>Qualitative Data</strong><br>The qualitative data we gathered through the evaluation was taking a screen recording of the user interaction with the application on both the prototypes, while they performed the tasks similar to the description in part 4. The purpose of collecting data in such a way was to gain insight of the effectiveness of the features and tools used for the application, for instance using the UVic colour pallet to indicate that the application was part of the University of Victoria program, navigating through the application symbols, finding the overall font and colour scheme easily readable and accessible.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Design recommendations</h2>
+        <ul class="lead">
+            <li>Using the variation prototype for your profile will reduce confusion as to editing profile, previewing profile, logging out and deleting account.</li>
+            <li>To reduce confusion about unmatching, instead of having the “...” button take you directly to reporting the user, there will be a screen that will have separate buttons. The buttons will say “Report User”, “View Users Profile”, and “Unmatch”.</li>
+            <li>The “Admin Login” needs to be a button instead of just text.</li>
+            <li>After clicking on a users profile that you would like to view, going back to the home screen was difficult for some users. Instead of having the back button in the middle of the screen, the back button will be placed in the top left corner to reduce confusion and be more consistent with the rest of the application.</li>
+            <li>An admin logout button should be added to the design.</li>
+            <li>Ability to swipe left or right on the potential matches profile instead of clicking the “Like” or “Dislike” buttons.</li>
+            <li>Clearer indication that the profiles on the home screen are people who are in your area, not people you have already “Liked” or “Disliked”.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Legal</a> &middot; <a href="#">Contact</a></p>
+    <p>&copy; 2019 FitConnect &amp; University of Victoria</p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+</html>
